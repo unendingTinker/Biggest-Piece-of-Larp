@@ -1,0 +1,273 @@
+/*
+======================================================================
+global stylings
+======================================================================
+*/
+@font-face {
+    font-family: 'iMWritingDuo Nerd Font';
+    src: url('https://file.garden/aaLm0lYbekwSrT7j/fonts/fonts/iMWritingDuoNerdFontPropo-Regular.ttf');
+}
+
+
+
+html {
+    text-align: center;
+    color: rgb(250, 45, 65);
+    background-color: red;
+}
+p {
+    font-size: 12px;
+}
+
+    /*
+    ======================================================================
+    text stylings
+    ======================================================================
+    */
+
+    .titleText {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .quoteText {
+        text-shadow: 1.5px 1px rgba(250, 45, 65, 0.485);
+        font-style: italic;
+    }
+    
+
+    /*
+    ======================================================================
+    text stylings
+    ======================================================================
+    */
+
+/*
+======================================================================
+global stylings
+======================================================================
+*/
+
+
+
+/*
+======================================================================
+button stylings
+======================================================================
+*/
+
+button {
+    font-family: 'iMWritingDuo Nerd Font';
+    margin-right: 5px;
+    width: 180px;
+    color: rgb(250, 45, 65);
+    text-shadow: 0px 0px 3px rgb(250, 45, 65);
+    font-size: 16px;
+    background-color: transparent;
+    border: rgb(250, 45, 65) 1px solid;
+    border-radius: 2px;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.8s;
+}
+    button:hover {
+        background-color: rgb(255, 202, 79);
+        box-shadow: 0px 0px 1px rgb(220, 165, 40), 0px 0px 3px rgb(220, 165, 40), 0px 0px 5px rgb(220, 165, 40);
+    }
+
+.homeButton {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 100px;
+    background-color: rgb(255, 202, 79);
+    transition-property: text-shadow, box-shadow;
+    transition-duration: 0.8s;
+}
+    .homeButton:hover {
+        text-shadow: 0px 0px 1px rgb(250, 45, 65), 0px 0px 3px rgb(250, 45, 65), 0px 0px 5px rgb(250, 45, 65);
+    }
+
+/*
+======================================================================
+button stylings
+======================================================================
+*/
+
+
+
+/*
+======================================================================
+home page stylings
+======================================================================
+*/
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #dbc8aa;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1.5%;
+    height: 100vh;
+}
+
+
+#maoText {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  text-shadow: 0px 0px 1px rgb(250, 45, 65), 0px 0px 3px rgb(250, 45, 65);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+#maoImage {
+    height: 200px;
+    width: 200px;
+    margin-top: 1%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px rgb(220, 165, 40), 
+    0px 0px 3px rgb(220, 165, 40), 
+    0px 0px 5px rgb(220, 165, 40), 
+    0px 0px 7px rgb(220, 165, 40);
+}
+
+.visualsWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+    to bottom,
+    #c9617a 0%,
+    #d4748a 22%,
+    #e8a99e 45%,
+    #f0c8b8 68%,
+    #f5d9c8 85%,
+    #f7e4d4 100%
+    );
+    flex: 1;
+}
+    .visualsWrapper #flags {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /*
+    ======================================================================
+    menu section stylings
+    ======================================================================
+    */
+    .menuWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1%;
+        flex-shrink: 0;
+        height: auto;
+    }
+    /*
+    ======================================================================
+    menu section stylings
+    ======================================================================
+    */
+
+/*
+======================================================================
+home page stylings
+======================================================================
+*/
+
+/*
+======================================================================
+sub page stylings
+======================================================================
+*/
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(background-made-from-bricks_23-2148742475.avif);
+    min-height: 100vh;
+    padding-bottom: 1%;
+}
+
+.titleBar {
+    background-color: rgb(250, 45, 65);
+    color: white;
+    letter-spacing: 15px;
+    width: 80%;
+    padding: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 1px rgb(220, 165, 40), 
+    0px 0px 3px rgb(220, 165, 40), 
+    0px 0px 5px rgb(220, 165, 40), 
+    0px 0px 7px rgb(220, 165, 40);
+}
+    .titleBar p {
+        padding: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-size: 20px;
+    }
+
+.readingRow {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin-top: 2%;
+}
+    .textContainer {
+        background-color: #faf2e5;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 5px;
+        color: black;
+        width: 30%;
+        height: auto;
+        margin-right: 2%;
+    }
+        .textContainer p {
+            margin: 0;
+            margin-top: 2px;
+        }
+        .textContainer .textWrap {
+            text-align: left;
+        }
+
+/*
+======================================================================
+sub page stylings
+======================================================================
+*/
+
+
+
+/*
+======================================================================
+bibliography stylings
+======================================================================
+*/
+
+.bibContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #dbc8aa;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1.5%;
+    min-height: 100vh;
+    text-align: left;
+}
+
+/*
+======================================================================
+bibliography stylings
+======================================================================
+*/
